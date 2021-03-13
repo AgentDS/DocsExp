@@ -9,6 +9,7 @@ import torch.nn as nn
 import torchvision
 import torchvision.transforms as transforms
 
+
 class ConvNet(nn.Module):
     """Convolutional network
 
@@ -20,7 +21,8 @@ class ConvNet(nn.Module):
         >>> num_classes = 10
         >>> model = ConvNet(num_classes)
     """
-    def __init__(self, num_classes=10):
+
+    def __init__(self, num_classes: int = 10):
         super(ConvNet, self).__init__()
         self.layer1 = nn.Sequential(
             nn.Conv2d(1, 16, kernel_size=5, stride=1, padding=2),

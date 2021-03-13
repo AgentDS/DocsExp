@@ -11,7 +11,8 @@ import torchvision.transforms as transforms
 
 
 # 3x3 convolution
-def conv3x3(in_channels, out_channels, stride=1):
+# here is example to put type of args in function header
+def conv3x3(in_channels: int, out_channels: int, stride: int = 1) -> nn.Module:
     return nn.Conv2d(in_channels, out_channels, kernel_size=3,
                      stride=stride, padding=1, bias=False)
 
@@ -19,6 +20,7 @@ def conv3x3(in_channels, out_channels, stride=1):
 # Residual block
 class ResidualBlock(nn.Module):
     """Create a single residual block"""
+
     def __init__(self, in_channels, out_channels, stride=1, downsample=None):
         """Initialization.
 
@@ -60,7 +62,7 @@ class ResNet(nn.Module):
     Performs a GET request to the /page/random/summary endpoint.
 
     Args:
-        block: net block.
+        block (nn.Module): net block.
         layers (list): number of blocks for each layer
         num_classes (int): number of classifier's output classes
 
@@ -74,7 +76,8 @@ class ResNet(nn.Module):
         >>> from docsexp.models import ResNet, ResidualBlock
         >>> model = ResNet(ResidualBlock, [2, 2, 2])
     """
-    def __init__(self, block, layers, num_classes=10):
+
+    def __init__(self, block: nn.Module, layers: list, num_classes: int = 10):
         super(ResNet, self).__init__()
         self.in_channels = 16
         self.conv = conv3x3(3, 16)
@@ -86,7 +89,7 @@ class ResNet(nn.Module):
         self.avg_pool = nn.AvgPool2d(8)
         self.fc = nn.Linear(64, num_classes)
 
-    def make_layer(self, block, out_channels, blocks, stride=1):
+    def make_layer(self, block: nn.Module, out_channels: int, blocks: int, stride: int = 1):
         downsample = None
         if (stride != 1) or (self.in_channels != out_channels):
             downsample = nn.Sequential(

@@ -40,6 +40,7 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.mathjax',
               'sphinx.ext.intersphinx',  # TODO: need add mapping in intersphinx_mapping
               # 'sphinx_typo3_theme',
+              'sphinx.ext.todo',
               'sphinxcontrib.napoleon',
               ]
 
