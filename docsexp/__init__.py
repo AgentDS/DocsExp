@@ -4,6 +4,6 @@
 # @Contact : zszxlsq@gmail.com
 # @File    : __init__.py
 # @Software: PyCharm
-from docsexp.models import resnet
-from docsexp.models import cnn
+from docsexp.models import *
+from docsexp.models import *
 

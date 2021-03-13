@@ -34,6 +34,7 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
+              'sphinx.ext.autosummary',
               'sphinx.ext.viewcode',
               'sphinx.ext.githubpages',
               'sphinx.ext.mathjax',
@@ -45,13 +46,27 @@ extensions = ['sphinx.ext.autodoc',
               # allows you to refer sections its title. This affects to the reference role (ref)
               ]
 
+# configuration for 'sphinx.ext.autodoc'
+# autoclass_content = "both"  # keep both __init__ and class name for each class
 autodoc_mock_imports = ["numpy", "torch", "torchvision"]
+autodoc_default_options = {
+    # 'ignore-module-all': True
+    'show-inheritance': None
+}
 
 # Add more mapping for 'sphinx.ext.intersphinx'
 intersphinx_mapping = {'python': ('https://docs.python.org/3', None),
                        'PyTorch': ('http://pytorch.org/docs/master/', None),
-                       'numpy': ('http://docs.scipy.org/doc/numpy/', None)}
+                       'numpy': ('https://numpy.org/doc/stable/', None)}
 
+# build the templated autosummary files
+autosummary_generate = True
+numpydoc_show_class_members = False
+
+# autosectionlabel throws warnings if section names are duplicated.
+# The following tells autosectionlabel to not throw a warning for
+# duplicated section names that are in different documents.
+autosectionlabel_prefix_document = True
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
