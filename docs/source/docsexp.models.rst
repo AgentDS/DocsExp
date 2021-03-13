@@ -1,29 +1,21 @@
-docsexp.models package
+docsexp.models Module
 ======================
 
-Submodules
-----------
+ConvNet
+-------
 
-docsexp.models.cnn module
--------------------------
-
-.. automodule:: docsexp.models.cnn
+.. autoclass:: docsexp.models.cnn.ConvNet
    :members:
-   :undoc-members:
-   :show-inheritance:
 
-docsexp.models.resnet module
-----------------------------
+ResNet
+------
 
-.. automodule:: docsexp.models.resnet
+.. autoclass:: docsexp.models.resnet.ResNet
    :members:
-   :undoc-members:
-   :show-inheritance:
 
-Module contents
----------------
+ResidualBlock
+-------------
 
-.. automodule:: docsexp.models
+.. autoclass:: docsexp.models.resnet.ResidualBlock
    :members:
-   :undoc-members:
-   :show-inheritance:
+
