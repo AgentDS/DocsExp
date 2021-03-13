@@ -12,7 +12,7 @@ import torchvision.transforms as transforms
 
 # 3x3 convolution
 # here is example to put type of args in function header
-def conv3x3(in_channels: int, out_channels: int, stride: int = 1) -> nn.Module:
+def conv3x3(in_channels: int, out_channels: int, stride: int = 1) -> torch.nn.Module:
     return nn.Conv2d(in_channels, out_channels, kernel_size=3,
                      stride=stride, padding=1, bias=False)
 
@@ -61,7 +61,7 @@ class ResNet(nn.Module):
     Performs a GET request to the /page/random/summary endpoint.
 
     Args:
-        block (nn.Module): net block.
+        block (torch.nn.Module): net block.
         layers (list): number of blocks for each layer
         num_classes (int): number of classifier's output classes
 

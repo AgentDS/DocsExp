@@ -12,12 +12,12 @@
 #
 import os
 import sys
+
 # sys.path.insert(0, os.path.abspath('.'))
 current_dir = os.path.dirname(__file__)
 target_dir = os.path.abspath(os.path.join(current_dir, "../.."))
 sys.path.insert(0, target_dir)
 print(target_dir)
-
 
 # -- Project information -----------------------------------------------------
 
@@ -27,7 +27,6 @@ author = 'AgentDS'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1'
-
 
 # -- General configuration ---------------------------------------------------
 
@@ -47,7 +46,9 @@ extensions = ['sphinx.ext.autodoc',
 autodoc_mock_imports = ["numpy", "torch", "torchvision"]
 
 # Add more mapping for 'sphinx.ext.intersphinx'
-intersphinx_mapping = {'python': ('https://docs.python.org/3', None)}
+intersphinx_mapping = {'python': ('https://docs.python.org/3', None),
+                       'PyTorch': ('http://pytorch.org/docs/master/', None),
+                       'numpy': ('http://docs.scipy.org/doc/numpy/', None)}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -56,7 +57,6 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
-
 
 # -- Options for HTML output -------------------------------------------------
 
