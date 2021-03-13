@@ -38,9 +38,11 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.githubpages',
               'sphinx.ext.mathjax',
               'sphinx.ext.intersphinx',  # TODO: need add mapping in intersphinx_mapping
-              # 'sphinx_typo3_theme',
               'sphinx.ext.todo',
+              # 'sphinx.ext.doctest',  # it seems dangerous to use this???
               'sphinxcontrib.napoleon',
+              'sphinx.ext.autosectionlabel',
+              # allows you to refer sections its title. This affects to the reference role (ref)
               ]
 
 autodoc_mock_imports = ["numpy", "torch", "torchvision"]
@@ -57,6 +59,12 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
+
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = 'sphinx'
+
+# If true, `todo` and `todoList` produce output, else they produce nothing.
+todo_include_todos = True
 
 # -- Options for HTML output -------------------------------------------------
 
