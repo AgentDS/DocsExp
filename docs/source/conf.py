@@ -14,7 +14,7 @@ import os
 import sys
 # sys.path.insert(0, os.path.abspath('.'))
 current_dir = os.path.dirname(__file__)
-target_dir = os.path.abspath(os.path.join(current_dir, "../../docsexp"))
+target_dir = os.path.abspath(os.path.join(current_dir, "../.."))
 sys.path.insert(0, target_dir)
 print(target_dir)
 
@@ -59,7 +59,8 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_typo3_theme"
+# html_theme = "sphinx_typo3_theme"
+html_theme = "sphinx_typo3_theme"  # white font in API docstrings... DO NOT use it
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
