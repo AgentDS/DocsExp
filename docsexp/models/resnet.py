@@ -19,20 +19,19 @@ def conv3x3(in_channels: int, out_channels: int, stride: int = 1) -> nn.Module:
 
 # Residual block
 class ResidualBlock(nn.Module):
-    """Create a single residual block"""
+    """Create a single residual block
+
+    Initialization for a single residual block.
+
+    Args:
+        in_channels (int):
+        out_channels (int):
+        stride (int):
+        downsample (optinal): Defaults to None.
+
+    """
 
     def __init__(self, in_channels, out_channels, stride=1, downsample=None):
-        """Initialization.
-
-        Initialization for a single residual block.
-
-        Args:
-            in_channels (int):
-            out_channels (int):
-            stride (int):
-            downsample (optinal): Defaults to None.
-
-        """
         super(ResidualBlock, self).__init__()
         self.conv1 = conv3x3(in_channels, out_channels, stride)
         self.bn1 = nn.BatchNorm2d(out_channels)
@@ -77,7 +76,7 @@ class ResNet(nn.Module):
         >>> model = ResNet(ResidualBlock, [2, 2, 2])
     """
 
-    def __init__(self, block: nn.Module, layers: list, num_classes: int = 10):
+    def __init__(self, block: torch.nn.Module, layers: list, num_classes: int = 10):
         super(ResNet, self).__init__()
         self.in_channels = 16
         self.conv = conv3x3(3, 16)
