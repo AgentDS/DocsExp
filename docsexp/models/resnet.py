@@ -55,26 +55,26 @@ class ResidualBlock(nn.Module):
 
 # ResNet
 class ResNet(nn.Module):
+    """Return a random page.
+
+    Performs a GET request to the /page/random/summary endpoint.
+
+    Args:
+        block: net block.
+        layers (list): number of blocks for each layer
+        num_classes (int): number of classifier's output classes
+
+    Returns:
+
+    Raises:
+        ClickException: The HTTP request failed or the HTTP response
+            contained an invalid body.
+
+    Example:
+        >>> from docsexp.models import ResNet, ResidualBlock
+        >>> model = ResNet(ResidualBlock, [2, 2, 2])
+    """
     def __init__(self, block, layers, num_classes=10):
-        """Return a random page.
-
-        Performs a GET request to the /page/random/summary endpoint.
-
-        Args:
-            block: net block.
-            layers (list): number of blocks for each layer
-            num_classes (int): number of classifier's output classes
-
-        Returns:
-
-        Raises:
-            ClickException: The HTTP request failed or the HTTP response
-                contained an invalid body.
-
-        Example:
-            >>> from docsexp.models import ResNet, ResidualBlock
-            >>> model = ResNet(ResidualBlock, [2, 2, 2])
-        """
         super(ResNet, self).__init__()
         self.in_channels = 16
         self.conv = conv3x3(3, 16)
