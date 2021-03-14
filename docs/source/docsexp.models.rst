@@ -12,7 +12,9 @@ ConvNet
 ResNet
 ------
 
-.. autoclass:: docsexp.models.resnet.ResNet()
+.. autoclass:: docsexp.models.resnet.ResNet
+    :show-inheritance:
+    :inherited-members:
 
 
 ResidualBlock

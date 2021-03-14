@@ -88,7 +88,7 @@ class ResNet(nn.Module):
         self.avg_pool = nn.AvgPool2d(8)
         self.fc = nn.Linear(64, num_classes)
 
-    def make_layer(self, block: nn.Module, out_channels: int, blocks: int, stride: int = 1):
+    def make_layer(self, block: torch.nn.Module, out_channels: int, blocks: int, stride: int = 1):
         downsample = None
         if (stride != 1) or (self.in_channels != out_channels):
             downsample = nn.Sequential(

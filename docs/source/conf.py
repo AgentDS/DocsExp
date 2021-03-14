@@ -34,7 +34,7 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
-              'sphinx.ext.autosummary',
+              # 'sphinx.ext.autosummary',
               'sphinx.ext.viewcode',
               'sphinx.ext.githubpages',
               'sphinx.ext.mathjax',
@@ -50,16 +50,21 @@ extensions = ['sphinx.ext.autodoc',
 # autoclass_content = "both"  # keep both __init__ and class name for each class
 autodoc_mock_imports = ["numpy", "torch", "torchvision"]
 # autodoc_typehints = 'signature'
-# autodoc_default_options = {
-#     'members': True,
-#     'undoc-members': True,
-#     'member-order': 'bysource',
-# }
-# autoclass_content = 'both'  # it seems not work
+autodoc_default_options = {
+    'members': True,
+    'undoc-members': True,
+}
+autoclass_content = 'both'  # it seems not work for class init params
 # autodoc_default_options = {
 #     # 'ignore-module-all': True
 #     'show-inheritance': None
 # }    # do not use this, unwanted inheritance for class
+
+
+# Napoleon settings, not useful???
+# napoleon_google_docstring = True
+# napoleon_include_init_with_doc = True
+
 
 # Add more mapping for 'sphinx.ext.intersphinx'
 intersphinx_mapping = {'python': ('https://docs.python.org/3', None),
@@ -67,13 +72,14 @@ intersphinx_mapping = {'python': ('https://docs.python.org/3', None),
                        'numpy': ('https://numpy.org/doc/stable/', None)}
 
 # build the templated autosummary files
-autosummary_generate = True
-numpydoc_show_class_members = False
+# autosummary_generate = True
+# numpydoc_show_class_members = False
 
 # autosectionlabel throws warnings if section names are duplicated.
 # The following tells autosectionlabel to not throw a warning for
 # duplicated section names that are in different documents.
 autosectionlabel_prefix_document = True
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
