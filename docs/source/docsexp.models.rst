@@ -5,17 +5,19 @@ ConvNet
 -------
 
 .. autoclass:: docsexp.models.cnn.ConvNet
-   :members:
+    :members:
+    :undoc-members:
+
 
 ResNet
 ------
 
-.. autoclass:: docsexp.models.resnet.ResNet
-   :members:
+.. autoclass:: docsexp.models.resnet.ResNet()
+
 
 ResidualBlock
 -------------
 
 .. autoclass:: docsexp.models.resnet.ResidualBlock
-   :members:
+
 

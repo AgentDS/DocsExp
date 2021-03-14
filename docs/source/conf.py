@@ -38,7 +38,7 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.viewcode',
               'sphinx.ext.githubpages',
               'sphinx.ext.mathjax',
-              'sphinx.ext.intersphinx',  # TODO: need add mapping in intersphinx_mapping
+              'sphinx.ext.intersphinx',
               'sphinx.ext.todo',
               # 'sphinx.ext.doctest',  # it seems dangerous to use this???
               'sphinxcontrib.napoleon',
@@ -50,6 +50,11 @@ extensions = ['sphinx.ext.autodoc',
 # autoclass_content = "both"  # keep both __init__ and class name for each class
 autodoc_mock_imports = ["numpy", "torch", "torchvision"]
 # autodoc_typehints = 'signature'
+# autodoc_default_options = {
+#     'members': True,
+#     'undoc-members': True,
+#     'member-order': 'bysource',
+# }
 # autoclass_content = 'both'  # it seems not work
 # autodoc_default_options = {
 #     # 'ignore-module-all': True
