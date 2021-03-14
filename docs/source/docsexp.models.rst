@@ -22,4 +22,9 @@ ResidualBlock
 
 .. autoclass:: docsexp.models.resnet.ResidualBlock
 
+MyClass
+-------
+
+.. autoclass:: docsexp.models.resnet.MyClass
+
 

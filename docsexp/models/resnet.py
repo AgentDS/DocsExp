@@ -112,3 +112,17 @@ class ResNet(nn.Module):
         out = out.view(out.size(0), -1)
         out = self.fc(out)
         return out
+
+class MyClass(object):
+    """Test for MyClass
+
+    Args:
+        num (int): number
+        age (int): age of class
+        time (int): time of class
+    """
+    def __init__(self, num, time, age):
+        self.num = num
+        self.age = age
+        self.time = time
+
