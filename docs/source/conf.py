@@ -34,6 +34,7 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
+              'autoapi.extension',  # this one is realy important
               # 'sphinx.ext.autosummary',
               'sphinx.ext.viewcode',
               'sphinx.ext.githubpages',
@@ -50,16 +51,20 @@ extensions = ['sphinx.ext.autodoc',
 # autoclass_content = "both"  # keep both __init__ and class name for each class
 autodoc_mock_imports = ["numpy", "torch", "torchvision"]
 # autodoc_typehints = 'signature'
-autodoc_default_options = {
-    'members': True,
-    'undoc-members': True,
-}
+# autodoc_default_options = {
+#     'members': True,
+#     'undoc-members': True,
+# }
 autoclass_content = 'both'  # it seems not work for class init params
 # autodoc_default_options = {
 #     # 'ignore-module-all': True
 #     'show-inheritance': None
 # }    # do not use this, unwanted inheritance for class
 
+# configuration for 'autoapi.extension'
+autoapi_type = 'python'
+autoapi_dirs = ['../../docsexp']
+autoapi_template_dir = '_autoapi_templates'
 
 # Napoleon settings, not useful???
 # napoleon_google_docstring = True

@@ -29,6 +29,10 @@ class ResidualBlock(nn.Module):
         stride (int):
         downsample (optinal): Defaults to None.
 
+    Returns:
+
+    Raises:
+        ClickException: The HTTP request failed or the HTTP response contained an invalid body.
     """
 
     def __init__(self, in_channels, out_channels, stride=1, downsample=None):
@@ -65,18 +69,12 @@ class ResNet(nn.Module):
         layers (list): number of blocks for each layer
         num_classes (int): number of classifier's output classes
 
-    Returns:
-
-    Raises:
-        ClickException: The HTTP request failed or the HTTP response
-            contained an invalid body.
-
     Example:
         >>> from docsexp.models import ResNet, ResidualBlock
         >>> model = ResNet(ResidualBlock, [2, 2, 2])
     """
 
-    def __init__(self, block: torch.nn.Module, layers: list, num_classes: int = 10):
+    def __init__(self, block: nn.Module, layers: list, num_classes: int = 10):
         super(ResNet, self).__init__()
         self.in_channels = 16
         self.conv = conv3x3(3, 16)
