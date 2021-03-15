@@ -1,0 +1,14 @@
+language: python
+python:
+  - "3.8"
+
+install:
+  - pip install -r requirements.txt
+
+
+notifications:
+  email:
+    recipients:
+      - zszxlsq@gmail.com
+    on_success: never
+    on_failure: always    # send a notification when build fail
