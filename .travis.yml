@@ -1,13 +1,24 @@
 language: python
 python:
-  - "3.8"
+  - 3.8
+  - 3.7
+  - 3.6
 
 cache: pip
 
 install:
   - pip install -r requirements.txt
+  - pip install coveralls
+  - pip install coverage
 
-script: true
+script: true  # trying to add real test script
+
+## command to run tests
+#script:
+#  coverage run tensorD/test_bench.py
+#after_success:
+#  coveralls
+
 
 notifications:
   email:
