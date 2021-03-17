@@ -14,8 +14,8 @@ setup(
     description="a demo for docs development and package management",
     url="https://github.com/AgentDS/DocsExp",
     packages=find_packages(exclude=()),  # TODO: add things in 'exclude'
-    install_requires=['pytorch==1.8.0',
-                      'torchvision==0.9.0',
+    install_requires=['pytorch',
+                      'torchvision',
                       'numpy'],
     python_requires='>=3.6',
     classifiers=[
