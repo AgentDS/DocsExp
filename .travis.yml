@@ -1,9 +1,14 @@
 language: python
 python:
-  - 3.8
-  - 3.7
-  - 3.6
+  - "3.8"
+  - "3.7"
+  - "3.6"
 
+dist: trusty  # base operating system for online CI
+sudo: false
+
+# Cache allows for a Python package versions to be
+# stored between runtime, to speed up sequential builds
 cache: pip
 
 install:
