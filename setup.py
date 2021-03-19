@@ -5,6 +5,18 @@
 # @File    : setup.py
 # @Software: PyCharm
 from setuptools import setup, find_packages
+from codecs import open
+from os import path
+
+
+def get_readme():
+    here = path.abspath(path.dirname(__file__))
+
+    # Get the long description from the README file
+    with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+        long_description = f.read()
+    return long_description
+
 
 setup(
     name="DocsExp",
@@ -12,8 +24,9 @@ setup(
     author="AgentDS",
     author_email="zszxlsq@gmail.com",
     description="a demo for docs development and package management",
+    long_description=get_readme(),
     url="https://github.com/AgentDS/DocsExp",
-    packages=find_packages(exclude=()),  # TODO: add things in 'exclude'
+    packages=find_packages(exclude=['docs']),  # TODO: add things in 'exclude'
     install_requires=['torch',
                       'torchvision',
                       'numpy'],
