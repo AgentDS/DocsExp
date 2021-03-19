@@ -4,7 +4,7 @@ python:
   - "3.7"
   - "3.6"
 
-dist: trusty  # base operating system for online CI
+dist: xenial  # base operating system for online CI, 'trusty' not work for python3.8
 sudo: false
 
 # Cache allows for a Python package versions to be
