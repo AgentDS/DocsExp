@@ -44,6 +44,9 @@ class ModelsTestCase(unittest.TestCase):
         cls.num_classes = 10
         cls.cnn_inputs = torch.zeros(20, 1, 28, 28)  # N,C_in, H_in, W_in
         cls.conv_inputs = torch.zeros(20, cls.in_channels, 28, 28)  # N,C_in, H_in, W_in
+        cls.num = 10
+        cls.time = 20000
+        cls.age = 24
 
     def test_conv3x3(self):
         conv = models.conv3x3(self.in_channels, self.out_channels, self.stride)
@@ -59,3 +62,10 @@ class ModelsTestCase(unittest.TestCase):
         res = cnn(self.cnn_inputs)
         torch_res = torch_cnn(self.cnn_inputs)
         self.assertTrue(torch.equal(torch.tensor(res.shape), torch.tensor(torch_res.shape)))
+
+    def test_MyClass(self):
+        obj = models.MyClass(self.num, self.time, self.age)
+        self.assertEqual(obj.num, self.num, msg="MyClass num check")
+        self.assertEqual(obj.time, self.time, msg="MyClass time check")
+        self.assertEqual(obj.age, self.age, msg="MyClass age check")
+
