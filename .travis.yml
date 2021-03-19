@@ -16,13 +16,13 @@ install:
   - pip install coveralls
   - pip install coverage
 
-script: true  # trying to add real test script
+#script: true  # trying to add real test script
 
 ## command to run tests
-#script:
-#  coverage run tensorD/test_bench.py
-#after_success:
-#  coveralls
+script:
+  coverage run --source=docsexp setup.py test
+after_success:
+  coveralls
 
 
 notifications:

@@ -9,14 +9,12 @@ import unittest
 
 
 def get_tests():
-    # from .resource import ResourceTestCase
+    from .models_test import ModelsTestCase
     # from .serializer import ResourceTestCase as SerializerTestCase
     # from .utils import UtilsTestCase
     #
-    # resourcesuite = unittest.TestLoader().loadTestsFromTestCase(ResourceTestCase)
+    modelssuite = unittest.TestLoader().loadTestsFromTestCase(ModelsTestCase)
     # serializersuite = unittest.TestLoader().loadTestsFromTestCase(SerializerTestCase)
     # utilssuite = unittest.TestLoader().loadTestsFromTestCase(UtilsTestCase)
     #
-    # return unittest.TestSuite([resourcesuite, serializersuite, utilssuite])
-
-    pass
+    return unittest.TestSuite([modelssuite])

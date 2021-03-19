@@ -32,6 +32,7 @@ setup(
                       'numpy'],
     python_requires='>=3.6',
     classifiers=[
+        # See: https://pypi.python.org/pypi?:action=list_classifiers
         'Topic :: Scientific/Engineering',
         'Topic :: Scientific/Engineering :: Mathematics',
         'Topic :: Scientific/Engineering :: Artificial Intelligence',
@@ -39,6 +40,9 @@ setup(
         'Topic :: Software Development :: Libraries',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'License :: OSI Approved :: MIT License',
+        # List of python versions and their support status:
+        # https://en.wikipedia.org/wiki/CPython#Version_history
         'Programming Language :: Python :: 3'
-    ]
+    ],
+    test_suite="tests.get_tests"
 )
