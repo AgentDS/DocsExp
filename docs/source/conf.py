@@ -56,7 +56,7 @@ autodoc_mock_imports = ["numpy", "torch", "torchvision"]
 #     'members': True,
 #     'undoc-members': True,
 # }
-autoclass_content = 'both'  # it seems not work for class init params
+autoclass_content = 'both'  
 # autodoc_default_options = {
 #     # 'ignore-module-all': True
 #     'show-inheritance': None
