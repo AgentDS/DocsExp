@@ -1,0 +1,10 @@
+codecov:
+  # token: 8b6e685b-713c-4d11-8e52-79a127a3a2dd
+  # ci:
+  #   - "travis.org"
+  require_ci_to_pass: yes
+
+coverage:
+  precision: 10
+  round: down
+  range: "50...100"  # value range where you want the value to be green
