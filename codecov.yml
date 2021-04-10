@@ -1,7 +1,9 @@
 codecov:
+  ci:
+    - "github.com/features/actions"
   require_ci_to_pass: yes
 
 coverage:
-  precision: 10
+  precision: 5
   round: down
-  range: "50...100"  # value range where you want the value to be green
+  range: "50...80"  # value range where you want the value to be green
