@@ -10,7 +10,7 @@ coverage:
   status:
     project:
       default:
-        target: 98%  # a target of an exact coverage number
+        target: 100%  # a target of an exact coverage number
         threshold: 1%  # Allow the coverage to drop by X%, and posting a success status
         
        
