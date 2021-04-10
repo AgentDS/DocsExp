@@ -7,3 +7,10 @@ coverage:
   precision: 5
   round: down
   range: "50...80"  # value range where you want the value to be green
+  status:
+    project:
+      default:
+        target: 70%  # a target of an exact coverage number
+        threshold: 1%  # Allow the coverage to drop by X%, and posting a success status
+        
+       
