@@ -69,3 +69,7 @@ class ModelsTestCase(unittest.TestCase):
         self.assertEqual(obj.time, self.time, msg="MyClass time check")
         self.assertEqual(obj.age, self.age, msg="MyClass age check")
 
+    def test_calculation(self):
+        res = models.calculate()
+        self.assertEqual(res, 'this is empty')
+

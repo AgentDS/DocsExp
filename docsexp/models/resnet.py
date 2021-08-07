@@ -18,6 +18,7 @@ def conv3x3(in_channels: int, out_channels: int, stride: int = 1) -> torch.nn.Mo
 
 def calculate():
     print('this is empty')
+    return 'this is empty'
 
 # Residual block
 # class ResidualBlock(nn.Module):
