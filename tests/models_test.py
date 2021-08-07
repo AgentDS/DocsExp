@@ -11,7 +11,7 @@ import torch.nn as nn
 import torchvision
 import torchvision.transforms as transforms
 
-
+# xx
 class torchCNN(nn.Module):
     def __init__(self, num_classes: int = 10):
         super(torchCNN, self).__init__()
