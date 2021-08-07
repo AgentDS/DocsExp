@@ -1,5 +1,5 @@
 # This is a basic workflow to help you get started with Actions
-name: CI
+name: machine14-CI
 on: 
   push:
     branches:
@@ -10,12 +10,20 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     strategy:
       matrix:
         python-version: [3.8]
 
     steps:
+      - name: Print GitHub context properties
+        run: |
+          echo 'event.before: ${{ github.event.before }}'
+          echo 'event.after: ${{ github.event.after }}'
+
+      - name: Current dir
+        run: pwd
+        
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
