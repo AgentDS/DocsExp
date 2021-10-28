@@ -100,6 +100,9 @@ pygments_style = 'sphinx'
 # If true, 'todo' and 'todoList' produce output, else they produce nothing.
 todo_include_todos = True
 
+# -- Multi-languages docs  --------------------------------------------------
+language = 'en'
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
