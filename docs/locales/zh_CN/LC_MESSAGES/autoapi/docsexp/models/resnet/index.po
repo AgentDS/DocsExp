@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, AgentDS
+# This file is distributed under the same license as the Docs Experiment
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Docs Experiment \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-30 14:22+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:2
+#: 03576dfcd4f947a48771e0b77c46861a
+msgid ":mod:`docsexp.models.resnet`"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:8
+#: 85fe47e15628416581b3623c61ad3ad9
+msgid "Module Contents"
+msgstr "模块内容"
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:11
+#: 42976fc72476463f9fc855774b7610d9
+msgid "Classes"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:18:<autosummary>:1
+#: 7a26216f3ed3457b8997d123e913539b
+msgid ":obj:`MyClass <docsexp.models.resnet.MyClass>`\\"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:39
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:18:<autosummary>:1
+#: afa1cb5440a0466c9b3fcb251e653ccf f0a3fb0bb8ee4c12a30e41a73d227da7
+msgid "Test for MyClass"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:20
+#: 81b11c3089cd4641aa1bda8d83b375ac
+msgid "Functions"
+msgstr "函数"
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:27:<autosummary>:1
+#: 71598a6f7a904b4f876d2726333d8cdc
+msgid ""
+":obj:`conv3x3 <docsexp.models.resnet.conv3x3>`\\ \\(in\\_channels\\: "
+"int\\, out\\_channels\\: int\\, stride\\: int \\= 1\\) → torch.nn.Module"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:27:<autosummary>:1
+#: 3426d9c0daff403bbad69d6d3ec2a0ae
+msgid ":obj:`calculate <docsexp.models.resnet.calculate>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:37
+#: d61bcac60f8946dc9e5eec18ddf9e36a
+msgid "Bases: :class:`object`"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst
+#: 19c30fb92e84459d8760c39ecc96448a
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:41
+#: e7f920e33732463fa023babfbb37696c
+msgid "number"
+msgstr "数字"
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:43
+#: 075354b22a4644aa96daf91b21b6314a
+msgid "age of class"
+msgstr "类的年龄"
+
+#: ../../source/autoapi/docsexp/models/resnet/index.rst:45
+#: 83243fd301784242865e25f4588a5a85
+msgid "time of class"
+msgstr "类的时间"
+

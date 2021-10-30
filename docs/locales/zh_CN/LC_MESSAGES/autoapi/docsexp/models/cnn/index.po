@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, AgentDS
+# This file is distributed under the same license as the Docs Experiment
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Docs Experiment \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-30 14:22+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/autoapi/docsexp/models/cnn/index.rst:2
+#: 32f4d0027b0d49df9d72e4ca169d14d7
+msgid ":mod:`docsexp.models.cnn`"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/cnn/index.rst:8
+#: 139ed38cf2094443b23d768b69e671bc
+msgid "Module Contents"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/cnn/index.rst:11
+#: 3fbfbf955f2243ceb52469ef9ac02a47
+msgid "Classes"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/cnn/index.rst:18:<autosummary>:1
+#: aa9e693ba3cf4ce0bcab051c8fc77c13
+msgid ":obj:`ConvNet <docsexp.models.cnn.ConvNet>`\\"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/cnn/index.rst:24
+#: ../../source/autoapi/docsexp/models/cnn/index.rst:18:<autosummary>:1
+#: 893564e9a0354a2ca34659b6d980bda5 e07afe59340d440d949bfa27fc1bae4f
+msgid "Convolutional network"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/cnn/index.rst:22
+#: 3f52020e89804c7ea45bcc5d86ea421f
+msgid "Bases: :class:`torch.nn.Module`"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/cnn/index.rst
+#: 78416d6c0ec747d6be6cf6bfd44b916f ca12f87ac528464a8445e62802b51ef1
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/cnn/index.rst:26
+#: 21f87f4309144fb4b928dfaf297bd5a3
+msgid "number of output classes"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/cnn/index.rst:30
+#: 24b69584257d4ded90f908c05ff79462
+msgid "Example"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/cnn/index.rst:37
+#: df3af48d55434a89ada0729c2774fd19
+msgid "Forward function for CNN."
+msgstr ""
+
+#: ../../source/autoapi/docsexp/models/cnn/index.rst:39
+#: bb311e743b80434680e88a1fd7f507d4
+msgid "input features"
+msgstr ""
+

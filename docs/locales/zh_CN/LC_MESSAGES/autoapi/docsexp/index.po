@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, AgentDS
+# This file is distributed under the same license as the Docs Experiment
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Docs Experiment \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-30 14:22+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/autoapi/docsexp/index.rst:2 810e0bb7c92844609388035a255517c9
+msgid ":mod:`docsexp`"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/index.rst:8 d54a0e57648c4cb599d4b9c62c351b38
+msgid "Subpackages"
+msgstr "子包"
+
+#: ../../source/autoapi/docsexp/index.rst:17 55e7f8b404bb4cb58b3d0b4f65345e49
+msgid "Package Contents"
+msgstr "包内容"
+
+#: ../../source/autoapi/docsexp/index.rst:20 6077c1a2fd2a4eb08c613ec6fb9468e0
+msgid "Classes"
+msgstr "类"
+
+#: ../../source/autoapi/docsexp/index.rst:28:<autosummary>:1
+#: 60dd8580757f42819530eac9252b01bc
+msgid ":obj:`MyClass <docsexp.MyClass>`\\"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/index.rst:49
+#: ../../source/autoapi/docsexp/index.rst:28:<autosummary>:1
+#: 2be04b32e7a64ab9ba71b7cb11a19e60 3689dc8f36dd4c83889095b92dec46c8
+msgid "Test for MyClass"
+msgstr "MyClass的测试"
+
+#: ../../source/autoapi/docsexp/index.rst:28:<autosummary>:1
+#: 0012ff85d0ca462785245650b887aac4
+msgid ":obj:`ConvNet <docsexp.ConvNet>`\\"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/index.rst:64
+#: ../../source/autoapi/docsexp/index.rst:28:<autosummary>:1
+#: 01da38fc8bb24dbf951f1a83ba093de1 490e2650e0014787bc5494809f27f850
+msgid "Convolutional network"
+msgstr "卷积网络"
+
+#: ../../source/autoapi/docsexp/index.rst:30 f62eb4f80d77419194867c3443310bb9
+msgid "Functions"
+msgstr "函数"
+
+#: ../../source/autoapi/docsexp/index.rst:37:<autosummary>:1
+#: b02513e9effd4073b077dda3b65e5499
+msgid ""
+":obj:`conv3x3 <docsexp.conv3x3>`\\ \\(in\\_channels\\: int\\, "
+"out\\_channels\\: int\\, stride\\: int \\= 1\\) → torch.nn.Module"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/index.rst:37:<autosummary>:1
+#: dea2572c76fc44738b4ab9fc592d864c
+msgid ":obj:`calculate <docsexp.calculate>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/index.rst:47 eb9b033aba9b47b2879ff3eb744a1a9a
+msgid "Bases: :class:`object`"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/index.rst d5f7d7bc1de5404386e28a15e3f0648e
+#: dcb9f1c88c124398b83e43f262c56c97 f861a636db46483fae7dcc3cb4bec907
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/index.rst:51 f2ef18fbdcd840369ac4478e2a01da43
+msgid "number"
+msgstr "数字"
+
+#: ../../source/autoapi/docsexp/index.rst:53 8c45aa0b312241e098caa4465875c5b8
+msgid "age of class"
+msgstr "类年龄"
+
+#: ../../source/autoapi/docsexp/index.rst:55 11fffa361e2342168784cbcdf8b0c1fe
+msgid "time of class"
+msgstr "类的时间"
+
+#: ../../source/autoapi/docsexp/index.rst:62 ca77665c709a474b9e6a26eedc17da4c
+msgid "Bases: :class:`torch.nn.Module`"
+msgstr ""
+
+#: ../../source/autoapi/docsexp/index.rst:66 7a9b283877da4c4b8bc78869e8edc8e1
+msgid "number of output classes"
+msgstr "输出类"
+
+#: ../../source/autoapi/docsexp/index.rst:70 e61c2c056bfe4bc4817308bd2460c7f7
+msgid "Example"
+msgstr "举例"
+
+#: ../../source/autoapi/docsexp/index.rst:77 df03d10986ae4864ba4ddad434ba05d0
+msgid "Forward function for CNN."
+msgstr "CNN向前传递函数。"
+
+#: ../../source/autoapi/docsexp/index.rst:79 00290856ec844eb9bc5cf5943c9ce4f7
+msgid "input features"
+msgstr "输入特征"
+
